@@ -52,7 +52,7 @@ router.put("/:id", (req, res) => {
         previous.tasks[index] = taskUpdated;
         return { ...previous, task: taskUpdated };
       }
-      return { ...previous, task: taskUpdated };
+      return previous;
     },
     {
       tasks,
