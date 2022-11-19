@@ -1,10 +1,9 @@
-const express = require("express");
-const taskRouter = require("./constrollers/task-controller");
+import express from "express";
+import taskRouter from "./constrollers/task-controller";
 
 const app = express();
 app.use(express.json());
 
-// shorturl.at/LQRUV
 app.use("/tasks", taskRouter);
 
 app.listen(3000, () => {
