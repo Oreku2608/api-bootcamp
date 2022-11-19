@@ -94,6 +94,7 @@ router.delete("/:id", (req, res) => {
     };
     return res.status(404).json(exception);
   }
+  return res.status(200).end();
 });
 
 export default router;
